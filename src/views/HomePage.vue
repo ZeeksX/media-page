@@ -20,47 +20,68 @@
             <p>Check out our collection of videos and photos to have a glance at what's happening at Sycamore</p>
         </div>
         <div class="video-frame">
-            <div class="loader">
-                <img v-show="loading" src="@/assets/loader.svg" alt="loading" />
-                <div class="video-clip"></div>
+            <div class="loader" v-if="loading">
+                <img src="@/assets/loader.svg" alt="loading" />
+            </div>
+            <div class="video-clip" v-if="!loading">
+                <div class="video-item-one">
+                    <a :href="`https://www.youtube.com/watch?v=${videoArray[0].snippet.resourceId.videoId}`"
+                        target="_blank">
+                        <img :src="videoArray[0].snippet.thumbnails.high.url" alt="Video Thumbnail" />
+                        <h3>{{ videoArray[0].snippet.title }}</h3>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="related-videos">
-            <div class="other"></div>
+        <div class="container">
+            <div class="loader" v-if="loading">
+                <img src="@/assets/loader.svg" alt="loading" />
+            </div>
+            <div class="mini-video-clip" v-if="!loading">
+                <div class='video-item-other' v-for="video in videoArray.slice(1)" :key="video.title">
+                    <a :href="`https://www.youtube.com/watch?v=${video.snippet.resourceId.videoId}`" target="_blank">
+                        <img :src="video.snippet.thumbnails.high.url" alt="Video Thumbnail" />
+                        <h3>{{ video.snippet.title }}</h3>
+                    </a>
+                </div>
+            </div>
+            
         </div>
     </div>
 </template>
-<style></style>
+
+<style>
+.video-item-other {
+    display: flex;
+
+}
+
+.video-item-one a {
+    color: black;
+    text-decoration: none;
+}
+</style>
+
 <script>
-import { useCounterStore } from "@/store/index.js"
+import { useCounterStore } from "@/store/index.js";
+
 export default {
     data() {
         return {
             loading: true,
-            counterStore: useCounterStore(),
-            videoArray: useCounterStore().snippet
-        }
+            videoArray: []
+        };
     },
     async mounted() {
-        await this.counterStore.fetchData();
+        const counterStore = useCounterStore();
+        await counterStore.fetchData();
+        this.videoArray = counterStore.videoArray;
         setTimeout(this.showVideos, 3000);
     },
     methods: {
         showVideos() {
-            this.playVideo();
             this.loading = false;
-        },
-        playVideo() {
-            const video = document.querySelector(".video-clip")
-            this.videoArray.forEach(element => {
-                video.innerHTML += `
-                <a href="https://www.youtube.com/watch?v=${element.resourceId.videoId}">
-                 <img src=${element.thumbnails.maxres.url}/>
-                </a> 
-            `
-            });
-        },
+        }
     }
-
-}
+};
 </script>
