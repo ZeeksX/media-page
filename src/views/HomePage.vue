@@ -33,7 +33,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="channel-video">
             <div class="loader" v-if="loading">
                 <img src="@/assets/loader.svg" alt="loading" />
             </div>
@@ -41,19 +41,50 @@
                 <div class='video-item-other' v-for="video in videoArray.slice(1)" :key="video.title">
                     <a :href="`https://www.youtube.com/watch?v=${video.snippet.resourceId.videoId}`" target="_blank">
                         <img :src="video.snippet.thumbnails.high.url" alt="Video Thumbnail" />
-                        <h3>{{ video.snippet.title }}</h3>
+                        <div class="video-info">
+                            <img src="../assets/channelLogo.svg" alt="channel-logo"/>
+                            <h3>{{ video.snippet.title }}</h3>
+                        </div>
                     </a>
                 </div>
             </div>
-            
+
         </div>
     </div>
 </template>
 
 <style>
-.video-item-other {
+.mini-video-clip {
     display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+    border-radius: 5px;
+    margin: 0 12.875rem;
+    overflow: hidden;
+}
 
+.channel-video {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.video-item-other img {
+    height: 162px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.video-item-other a {
+    color: black;
+    text-decoration: none;
+}
+
+.video-item-other {
+    width: 290px;
+    background-color: lightgrey;
 }
 
 .video-item-one a {

@@ -9,7 +9,7 @@ export const useCounterStore = defineStore("counter", {
 		async fetchData() {
 			try {
 				const data = await fetch(
-					"https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=UUzsMXDElPmWUht3mfQOJBkg&key=AIzaSyB6mPE6M8cF2DlZ1JPDd3Hag6Ybwlmnfmg"
+					" https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=7&playlistId=UUzsMXDElPmWUht3mfQOJBkg&key=AIzaSyB6mPE6M8cF2DlZ1JPDd3Hag6Ybwlmnfmg"
 				);
 				const res = await data.json();
 				this.videoArray = res.items;
