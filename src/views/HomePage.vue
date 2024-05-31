@@ -33,37 +33,84 @@
                 </div>
             </div>
         </div>
-        <div class="channel-video">
+        <div id="carouselExample" class="carousel slide">
             <div class="loader" v-if="loading">
                 <img src="@/assets/loader.svg" alt="loading" />
             </div>
-            <div class="mini-video-clip" v-if="!loading">
-                <div class='video-item-other' v-for="video in videoArray.slice(1)" :key="video.title">
+            <div class="carousel-inner" v-if="!loading">
+                <div class="carousel-item " v-for="(video) in videoArray.slice(1)"
+                    :key="video.snippet.resourceId.videoId">
                     <a :href="`https://www.youtube.com/watch?v=${video.snippet.resourceId.videoId}`" target="_blank">
                         <img :src="video.snippet.thumbnails.high.url" alt="Video Thumbnail" />
                         <div class="video-info">
                             <img src="../assets/channelLogo.svg" alt="channel-logo" />
                             <h3>{{ video.snippet.title }}</h3>
                         </div>
+                        <div class="channel-details">
+                            <h3>{{ video.snippet.videoOwnerChannelTitle }} <i class="bi bi-check-circle-fill"></i></h3>
+                            <h3></h3>
+                        </div>
                     </a>
                 </div>
             </div>
-
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"> </span>
+                <span class="visually-hidden">Next</span>
+            </button> -->
         </div>
     </div>
 </template>
 
 <style>
+.channel-details i{
+    width: 10px;
+    height: 10px;
+    margin-left: 4px;
+}
+.channel-details h3{
+    margin: 5px 2.625rem;
+    color: #727272;
+    font-family: Poppins;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.carousel-inner {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+}
+
+.carousel-item {
+    display: flex;
+    flex-direction: row;
+    width: 290px;
+    margin: 0;
+}
+
+#carouselExample {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .video-info {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 5px;
+    gap: 0.75rem;
     margin-top: 10px;
+    height: 54px;
 }
 
-.video-item-other .video-info h3 {
+.carousel-item .video-info h3 {
     color: #000;
     font-family: Poppins;
     font-size: 12px;
@@ -71,21 +118,13 @@
     font-weight: 500;
     line-height: 18px;
     text-align: justify;
+    margin: 0;
     /* 150% */
 }
 
-.video-item-other .video-info img {
+.carousel-item .video-info img {
     width: 30px;
     height: 30px;
-}
-
-.mini-video-clip {
-    display: flex;
-    flex-direction: row;
-    gap: 0.75rem;
-    border-radius: 5px;
-    margin: 0 12.875rem;
-    overflow: hidden;
 }
 
 .channel-video {
@@ -96,20 +135,16 @@
     flex-shrink: 0;
 }
 
-.video-item-other img {
+.carousel-item img {
     height: 162px;
-    width: 100%;
+    width: 290px;
     border-radius: 5px;
 }
 
-.video-item-other a {
+.carousel-item a {
     color: black;
     text-decoration: none;
-}
-
-.video-item-other {
     width: 290px;
-    background-color: lightgrey;
 }
 
 .video-item-one a {
