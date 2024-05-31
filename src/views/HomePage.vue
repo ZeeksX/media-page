@@ -42,7 +42,7 @@
                     <a :href="`https://www.youtube.com/watch?v=${video.snippet.resourceId.videoId}`" target="_blank">
                         <img :src="video.snippet.thumbnails.high.url" alt="Video Thumbnail" />
                         <div class="video-info">
-                            <img src="../assets/channelLogo.svg" alt="channel-logo"/>
+                            <img src="../assets/channelLogo.svg" alt="channel-logo" />
                             <h3>{{ video.snippet.title }}</h3>
                         </div>
                     </a>
@@ -54,6 +54,31 @@
 </template>
 
 <style>
+.video-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.video-item-other .video-info h3 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: justify;
+    /* 150% */
+}
+
+.video-item-other .video-info img {
+    width: 30px;
+    height: 30px;
+}
+
 .mini-video-clip {
     display: flex;
     flex-direction: row;
