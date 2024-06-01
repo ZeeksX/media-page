@@ -226,6 +226,7 @@
 .blog-details .card-body p{
     margin-bottom: 0;
     width: 20.375rem;
+    height: 1.8125rem;
 }
 .blog-details .card-body{
     display: flex;
