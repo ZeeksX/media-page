@@ -283,6 +283,7 @@ body {
 
 .press {
 	background-color: #f6f6f7;
+	padding-bottom: 5.75rem;
 }
 
 .press h3 {
@@ -299,6 +300,10 @@ body {
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1.5rem;
 }
 
 .channel-details i {
