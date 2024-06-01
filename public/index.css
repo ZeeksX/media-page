@@ -150,3 +150,44 @@ body {
     height: 36rem;
     border-radius: 21.114px;
 }
+.frame {
+    display: inline-flex;
+    padding: 108px 301px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4.875rem;
+    background-color: #CCF0FE;
+    width: 100%;
+}
+
+.frame button {
+    border-radius: 6.639px;
+    background: #26C165;
+    display: inline-flex;
+    padding: 25px 43px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 15.933px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18.588px;
+    border: 1px solid #f7f7f7;
+    /* 116.667% */
+}
+
+.frame h3 {
+    width: 508px;
+    height: 64px;
+    color: #073042;
+    font-family: Poppins;
+    font-size: 21.474px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.859px;
+}

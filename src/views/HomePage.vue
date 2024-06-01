@@ -62,16 +62,114 @@
                 <span class="visually-hidden">Next</span>
             </button> -->
         </div>
+        <div class="frame">
+            <h3>Lending in Nigeria: Can Tech Make Borrowing from Family and Friends Sustainable?</h3>
+            <button><i class="bi bi-download"></i>Download report</button>
+        </div>
+        <div class="press">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../assets/africa business communities logo.png" class="card-img-top" alt="africa business communities logo">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../assets/techcabal logo.png" class="card-img-top" alt="techcabal logo">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../assets/businessday logo.png" class="card-img-top" alt="businessday logo">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../assets/distrupt africa logo.png" class="card-img-top" alt="distrupt africa logo">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../assets/how we made it in africa logo.png" class="card-img-top" alt="how we made it in africa logo">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../assets/the nigerian xpress logo.png" class="card-img-top" alt="the nigerian xpress logo">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../assets/thisday logo.png" class="card-img-top" alt="thisday logo">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
     </div>
 </template>
 
 <style>
-.channel-details i{
+.channel-details i {
     width: 10px;
     height: 10px;
     margin-left: 4px;
 }
-.channel-details h3{
+
+.channel-details h3 {
     margin: 5px 2.625rem;
     color: #727272;
     font-family: Poppins;
@@ -97,7 +195,7 @@
 
 #carouselExample {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 8.9375rem;
 }
 
 .video-info {
