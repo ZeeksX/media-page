@@ -67,85 +67,116 @@
             <button><i class="bi bi-download"></i>Download report</button>
         </div>
         <div class="press">
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="card" style="width: 18rem;">
-                            <img src="../assets/africa business communities logo.png" class="card-img-top" alt="africa business communities logo">
+            <h3>Press Clippings <i class="bi bi-newspaper"></i></h3>
+            <div id="carouselExample2" class="carousel slide">
+                <div class="carousel-inner" id="carousel-inner">
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="../assets/businessday logo.png" class="card-img-top" alt="businessday logo">
+                            </div>
+
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">businessday</h5>
+                                <p class="card-text">Businesses, individuals in focus as Sycamore launches solution to
+                                    financial freedom</p>
+                                <a href="#" class="btn btn-primary">Read more</a>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="card" style="width: 18rem;">
-                            <img src="../assets/techcabal logo.png" class="card-img-top" alt="techcabal logo">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="../assets/techcabal logo.png" class="card-img-top" alt="techcabal logo">
+                            </div>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">techcabal</h5>
+                                <p class="card-text">Businesses, individuals in focus as Sycamore launches solution to
+                                    financial freedom</p>
+                                <a href="#" class="btn btn-primary">Read more</a>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="card" style="width: 18rem;">
-                            <img src="../assets/businessday logo.png" class="card-img-top" alt="businessday logo">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="../assets/distrupt africa logo.png" class="card-img-top"
+                                    alt="distrupt africa logo">
+                            </div>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">distrupt africa</h5>
+                                <p class="card-text">Nigerian lending app Sycamore closes seed round to expand
+                                    operations</p>
+                                <a href="#" class="btn btn-primary">Read more</a>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="card" style="width: 18rem;">
-                            <img src="../assets/distrupt africa logo.png" class="card-img-top" alt="distrupt africa logo">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="../assets/thisday logo.png" class="card-img-top" alt="thisday logo">
+                            </div>
+
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">thisday</h5>
+                                <p class="card-text">Sycamore Presents Lending Platform for Businesses</p>
+                                <a href="#" class="btn btn-primary">Read more</a>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="card" style="width: 18rem;">
-                            <img src="../assets/how we made it in africa logo.png" class="card-img-top" alt="how we made it in africa logo">
+                        <div class="card">
+                            <img src="../assets/how we made it in africa logo.png" class="card-img-top"
+                                alt="how we made it in africa logo">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">how we made it in africa</h5>
+                                <p class="card-text">Nigeria: Start-up connects investors with SMEs that need funding
+                                </p>
+                                <a href="#" class="btn btn-primary">Read more</a>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="card" style="width: 18rem;">
-                            <img src="../assets/the nigerian xpress logo.png" class="card-img-top" alt="the nigerian xpress logo">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="../assets/africa business communities logo.png" class="card-img-top"
+                                    alt="africa business communities logo">
+                            </div>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Africa Business Communities</h5>
+                                <p class="card-text">Startup Interview with Babatunde Akin-Moses, CEO, Sycamore, Nigeria
+                                </p>
+                                <a href="#" class="btn btn-primary">Read more</a>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="card" style="width: 18rem;">
-                            <img src="../assets/thisday logo.png" class="card-img-top" alt="thisday logo">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="../assets/businessday logo.png" class="card-img-top" alt="businessday logo">
+                            </div>
+
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">businessday</h5>
+                                <p class="card-text">Businesses, individuals in focus as Sycamore launches solution to
+                                    financial freedom</p>
+                                <a href="#" class="btn btn-primary">Read more</a>
                             </div>
                         </div>
                     </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="../assets/the nigerian xpress logo.png" class="card-img-top"
+                                alt="the nigerian xpress logo">
+                            <div class="card-body">
+                                <h5 class="card-title">the nigerian xpress</h5>
+                                <p class="card-text">Entrepreneurship comes with hard work, sweat and tears -Onyinye
+                                    Okonji, co-founder Sycamore.NG</p>
+                                <a href="#" class="btn btn-primary">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
                     data-bs-slide="prev">
@@ -163,92 +194,7 @@
 </template>
 
 <style>
-.channel-details i {
-    width: 10px;
-    height: 10px;
-    margin-left: 4px;
-}
 
-.channel-details h3 {
-    margin: 5px 2.625rem;
-    color: #727272;
-    font-family: Poppins;
-    font-size: 9px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.carousel-inner {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    width: 100%;
-}
-
-.carousel-item {
-    display: flex;
-    flex-direction: row;
-    width: 290px;
-    margin: 0;
-}
-
-#carouselExample {
-    width: 80%;
-    margin: 0 auto 8.9375rem;
-}
-
-.video-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 0.75rem;
-    margin-top: 10px;
-    height: 54px;
-}
-
-.carousel-item .video-info h3 {
-    color: #000;
-    font-family: Poppins;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 18px;
-    text-align: justify;
-    margin: 0;
-    /* 150% */
-}
-
-.carousel-item .video-info img {
-    width: 30px;
-    height: 30px;
-}
-
-.channel-video {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    flex-shrink: 0;
-}
-
-.carousel-item img {
-    height: 162px;
-    width: 290px;
-    border-radius: 5px;
-}
-
-.carousel-item a {
-    color: black;
-    text-decoration: none;
-    width: 290px;
-}
-
-.video-item-one a {
-    color: black;
-    text-decoration: none;
-}
 </style>
 
 <script>
