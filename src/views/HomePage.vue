@@ -218,24 +218,96 @@
                     </div>
                 </div>
             </div>
+            <div class="blog-link">
+                <a class="btn btn-primary"><i class="bi bi-arrow-up-right"></i>See our blog</a>
+            </div>
+
         </div>
         <div class="promotion">
-            <h3>Download Sycamore</h3>
-            
+            <div class="promotion-details">
+                <h3>Download Sycamore</h3>
+                <div class="promotion-link">
+                    <a href="#">
+                        <div>
+                            <img src="../assets/Group.svg" />
+                        </div>
+                        <div class="promotion-text">
+                            <span>Get it on </span>
+                            <h5>App Store</h5>
+                        </div>
 
+                    </a>
+                    <a href="#" target="_blank">
+                        <div>
+                            <img src="../assets/Vector.svg" />
+                        </div>
+                        <div class="promotion-text">
+                            <span>Get it on </span>
+                            <h5>Google Play</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <img class="image" src="../assets/phone.png" alt="phone-image" />
+        </div>
+        <div class="footer">
+            <div class="footer-images">
+                <img src="../assets/sycamorelogodark.svg" alt="sycamore-logo" />
+                <img src="../assets/ndpraudit.svg" alt="ndpraudit" />
+            </div>
+            <div class="footer-text">
+                <ul class="footer-list">
+                    <li>Company</li>
+                    <li>About us</li>
+                    <li>Careers</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+            </div>
+            <div class="footer-text">
+                <ul class="footer-list">
+                    <li>Resources</li>
+                    <li>FAQs</li>
+                    <li>Blog</li>
+                    <li>Help Center</li>
+                </ul>
+            </div>
+            <div class="footer-text">
+                <ul class="footer-list">
+                    <li>Get in touch</li>
+                    <li><img src="../assets/phone-icon.svg" /><a href="#">01 700 2021</a></li>
+                    <li><img src="../assets/mail-icon.svg" /><a href="#">info@sycamore.ng</a></li>
+                    <li><img src="../assets/address-logo.svg" /><a href="#">53b Oduduwa way, Ikeja, Lagos</a></li>
+                </ul>
+                <div class="footer-div">
+                    <h3>Socials</h3>
+                    <ul class="footer-list">
+                        <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                        <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                        <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
     </div>
 </template>
 
 <style>
-.promotion img{
-    margin-left: 43.125rem;
+.footer img {
+    margin-left: 18.0625rem;
+    margin-top: 2.75rem;
 }
-.promotion{
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
+
+.footer {
+    height: 386px;
+    background-color: #073042;
+    display: flex;
+    flex-direction: row;
+    gap: 4.9375rem;
+
 }
 </style>
 
