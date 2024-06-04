@@ -219,88 +219,23 @@
                 </div>
             </div>
         </div>
+        <div class="promotion">
+            <h3>Download Sycamore</h3>
+            
+
+        </div>
     </div>
 </template>
 
 <style>
-.blog-details .card-body p{
-    margin-bottom: 0;
-    width: 20.375rem;
-    height: 1.8125rem;
+.promotion img{
+    margin-left: 43.125rem;
 }
-.blog-details .card-body{
-    display: flex;
-    flex-direction: column;
-    gap: 3.57px;
-}
-#licensing,
-#money,
-#mobile-app {
-    color: #000;
-    font-family: Poppins;
-    font-size: 8.926px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 21.423px;
-    border-radius: 7.141px;
-    display: flex;
-    padding: 2.678px 7.141px 1px 7.141px;
-    justify-content: center;
-    align-items: center;
-    gap: 8.926px;
-    /* 240% */
-}
-#mobile-app{
-    background-color: #DEF6E8;
-}
-#licensing{
-    background-color: #CCF0FE;
-}
-#money{
-    background-color: #FFE4CC;
-}
-.blog-details p {
-    color: #000;
-    font-variant-numeric: lining-nums proportional-nums;
-    font-family: Poppins;
-    font-size: 12.497px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 28.563px;
-    width: 20.375rem;
-    /* 228.571% */
-}
-
-.blog-details img {
-    width: 323px;
-    height: 192px;
-}
-
-.blog-details .card {
-    width: 338px;
-    padding: 15px 7.5px;
-    border: none;
-    gap: 12px;
-}
-
-.blog-details {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0 11.9375rem;
-}
-
-.blog h3 {
-    font-family: Poppins;
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 63.5px;
-    /* 181.429% */
-    letter-spacing: -1.4px;
-    padding: 8.9375rem 11.9375rem 1.6875rem;
-    margin: 0;
+.promotion{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
 }
 </style>
 
