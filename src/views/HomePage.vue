@@ -31,8 +31,8 @@
             </div>
         </div>
         <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner" v-if="!loading">
-                <div class="carousel-item " v-for="(video) in videoArray.slice(1)"
+            <div class="carousel-inner">
+                <div class="carousel-item" v-for="(video) in videoArray.slice(1)"
                     :key="video.snippet.resourceId.videoId">
                     <iframe :src="`https://www.youtube.com/embed/${video.snippet.resourceId.videoId}`" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -105,8 +105,10 @@
                     </div>
                     <div class="carousel-item">
                         <div class="card">
-                            <img src="../assets/how we made it in africa logo.png" class="card-img-top"
-                                alt="how we made it in africa logo">
+                            <div class="card-image">
+                                <img src="../assets/how we made it in africa logo.png" class="card-img-top"
+                                    alt="how we made it in africa logo">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">how we made it in africa</h5>
                                 <p class="card-text">Nigeria: Start-up connects investors with SMEs that need funding
@@ -145,8 +147,10 @@
                     </div>
                     <div class="carousel-item">
                         <div class="card">
-                            <img src="../assets/the nigerian xpress logo.png" class="card-img-top"
-                                alt="the nigerian xpress logo">
+                            <div class="card-image">
+                                <img src="../assets/the nigerian xpress logo.png" class="card-img-top"
+                                    alt="the nigerian xpress logo">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">the nigerian xpress</h5>
                                 <p class="card-text">Entrepreneurship comes with hard work, sweat and tears -Onyinye
@@ -314,7 +318,7 @@
     text-decoration: none;
     cursor: pointer;
     /* 200% */
-
+    opacity: 0.9;
 }
 
 .footer .footer-list img {
@@ -392,7 +396,7 @@ export default {
         const counterStore = useCounterStore();
         await counterStore.fetchData();
         this.videoArray = counterStore.videoArray;
-        setTimeout(this.showVideos, 3000);
+        setTimeout(this.showVideos, 10);
     },
     methods: {
         showVideos() {
