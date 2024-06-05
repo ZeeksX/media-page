@@ -33,6 +33,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin-top: 15.8125rem;
 }
 
 .evolving h1 {
@@ -76,9 +77,13 @@ body {
 }
 
 .navbar {
-	margin: 5.125rem auto 8rem;
+	margin: 0 auto 8rem;
 	display: flex;
-	width: 70%;
+	width: 66%;
+	position: fixed;
+	top: 5.125rem;
+	left: 17%;
+	z-index: 1;
 }
 
 #signin {
@@ -337,14 +342,15 @@ body {
 
 .carousel-item {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	width: 290px;
 	margin: 0;
 }
 
 #carouselExample {
-	width: 80%;
+	width: 64rem;
 	margin: 0 auto 8.9375rem;
+	display: block;
 }
 
 .video-info {
@@ -382,7 +388,7 @@ body {
 	flex-shrink: 0;
 }
 
-.carousel-item img {
+.carousel-item iframe {
 	height: 162px;
 	width: 290px;
 	border-radius: 5px;
@@ -394,9 +400,12 @@ body {
 	width: 290px;
 }
 
-.video-item-one a {
+.video-item-one iframe {
 	color: black;
 	text-decoration: none;
+	width: 100%;
+	border-radius: 21.114px;
+	height: 36rem;
 }
 .blog-details .card-body p{
     margin-bottom: 0;

@@ -20,47 +20,26 @@
             <p>Check out our collection of videos and photos to have a glance at what's happening at Sycamore</p>
         </div>
         <div class="video-frame">
-            <div class="loader" v-if="loading">
-                <img src="@/assets/loader.svg" alt="loading" />
-            </div>
             <div class="video-clip" v-if="!loading">
                 <div class="video-item-one">
-                    <a :href="`https://www.youtube.com/watch?v=${videoArray[0].snippet.resourceId.videoId}`"
-                        target="_blank">
-                        <img :src="videoArray[0].snippet.thumbnails.high.url" alt="Video Thumbnail" />
-                        <h3>{{ videoArray[0].snippet.title }}</h3>
-                    </a>
+                    <iframe :src="`https://www.youtube.com/embed/${videoArray[0].snippet.resourceId.videoId}`"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
                 </div>
             </div>
         </div>
         <div id="carouselExample" class="carousel slide">
-            <div class="loader" v-if="loading">
-                <img src="@/assets/loader.svg" alt="loading" />
-            </div>
             <div class="carousel-inner" v-if="!loading">
                 <div class="carousel-item " v-for="(video) in videoArray.slice(1)"
                     :key="video.snippet.resourceId.videoId">
-                    <a :href="`https://www.youtube.com/watch?v=${video.snippet.resourceId.videoId}`" target="_blank">
-                        <img :src="video.snippet.thumbnails.high.url" alt="Video Thumbnail" />
-                        <div class="video-info">
-                            <img src="../assets/channelLogo.svg" alt="channel-logo" />
-                            <h3>{{ video.snippet.title }}</h3>
-                        </div>
-                        <div class="channel-details">
-                            <h3>{{ video.snippet.videoOwnerChannelTitle }} <i class="bi bi-check-circle-fill"></i></h3>
-                            <h3></h3>
-                        </div>
-                    </a>
+                    <iframe :src="`https://www.youtube.com/embed/${video.snippet.resourceId.videoId}`" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
                 </div>
             </div>
-            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"> </span>
-                <span class="visually-hidden">Next</span>
-            </button> -->
         </div>
         <div class="frame">
             <h3>Lending in Nigeria: Can Tech Make Borrowing from Family and Friends Sustainable?</h3>
@@ -258,18 +237,18 @@
             <div class="footer-text">
                 <ul class="footer-list">
                     <li>Company</li>
-                    <li>About us</li>
-                    <li>Careers</li>
-                    <li>Privacy Policy</li>
-                    <li>Terms & Conditions</li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
                 </ul>
             </div>
             <div class="footer-text">
                 <ul class="footer-list">
                     <li>Resources</li>
-                    <li>FAQs</li>
-                    <li>Blog</li>
-                    <li>Help Center</li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Help Center</a></li>
                 </ul>
             </div>
             <div class="footer-text">
@@ -333,6 +312,7 @@
     font-weight: 400;
     line-height: 29.801px;
     text-decoration: none;
+    cursor: pointer;
     /* 200% */
 
 }
