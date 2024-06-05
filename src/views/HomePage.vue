@@ -253,7 +253,7 @@
         <div class="footer">
             <div class="footer-images">
                 <img src="../assets/sycamorelogodark.svg" alt="sycamore-logo" />
-                <img src="../assets/ndpraudit.svg" alt="ndpraudit" />
+                <img id='ndpr' src="../assets/ndpraudit.svg" alt="ndpraudit" />
             </div>
             <div class="footer-text">
                 <ul class="footer-list">
@@ -279,9 +279,9 @@
                     <li><img src="../assets/mail-icon.svg" /><a href="#">info@sycamore.ng</a></li>
                     <li><img src="../assets/address-logo.svg" /><a href="#">53b Oduduwa way, Ikeja, Lagos</a></li>
                 </ul>
-                <div class="footer-div">
+                <div class="footer-socials">
                     <h3>Socials</h3>
-                    <ul class="footer-list">
+                    <ul class="socials-list">
                         <li><a href="#"><i class="bi bi-instagram"></i></a></li>
                         <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
                         <li><a href="#"><i class="bi bi-twitter"></i></a></li>
@@ -296,9 +296,95 @@
 </template>
 
 <style>
-.footer img {
-    margin-left: 18.0625rem;
-    margin-top: 2.75rem;
+.socials-list i {
+    display: flex;
+    font-size: 12.3295px;
+    color: #26C165;
+    border: 0.5px solid #26C165;
+    padding: 4.55px;
+    border-radius: 5px;
+}
+
+.socials-list a {
+    text-decoration: none;
+}
+
+.socials-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 6px;
+    width: 8.5rem;
+}
+
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+    margin-top: 17.69px;
+}
+
+.footer-list li a {
+    color: var(--white, #FFF);
+    font-family: Poppins;
+    font-size: 14.9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29.801px;
+    text-decoration: none;
+    /* 200% */
+
+}
+
+.footer .footer-list img {
+    margin: 0;
+    width: 17.694px;
+    height: 17.694px;
+}
+
+.footer-list li:not(:first-child) {
+    color: var(--white, #FFF);
+    font-family: Poppins;
+    font-size: 14.9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29.801px;
+    list-style-type: none;
+    display: flex;
+    gap: 6.52px;
+    align-items: center;
+    /* 200% */
+}
+
+.footer-list li:first-child,
+.footer-socials h3 {
+    list-style-type: none;
+    color: var(--white, #FFF);
+    font-family: Poppins;
+    font-size: 14.9px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20.861px;
+    margin-bottom: 17.69px;
+    /* 140% */
+}
+
+.footer-list {
+    margin: 0;
+    padding: 0;
+}
+
+#ndpr {
+    width: 151.41px;
+    height: 88.663px;
+}
+
+.footer-images {
+    display: flex;
+    flex-direction: column;
+    gap: 21.42px;
+    align-items: center;
 }
 
 .footer {
@@ -307,7 +393,8 @@
     display: flex;
     flex-direction: row;
     gap: 4.9375rem;
-
+    justify-content: center;
+    padding-top: 2.75rem;
 }
 </style>
 
