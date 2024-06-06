@@ -1,35 +1,11 @@
 <template>
     <div class="home">
-        <nav class="navbar">
-            <div class="list-content-one">
-                <img id="logo" src="../assets/sycamorelogo.svg" alt="company-logo" tabindex="0" />
-                <ul class="list-items">
-                    <li><a href="#" target="_blank">Company</a></li>
-                    <li><a href="#" target="_blank">Features</a></li>
-                    <li><a href="#" target="_blank">Help</a></li>
-                    <li><a href="#" target="_blank">Blog</a></li>
-                </ul>
-            </div>
-            <div class="list-content-two">
-                <button class="btn btn-primary me-md-2" type="button" id="signin">Sign in</button>
-                <button class="btn btn-primary" type="button" id="signup">Sign up</button>
-            </div>
-        </nav>
+        <NavBar/>
         <div class="evolving">
             <h1>What we've been up to.</h1>
             <p>Check out our collection of videos and photos to have a glance at what's happening at Sycamore</p>
         </div>
-        <div class="video-frame">
-            <div class="video-clip" v-if="!loading">
-                <div class="video-item-one">
-                    <iframe :src="`https://www.youtube.com/embed/${videoArray[0].snippet.resourceId.videoId}`"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
-        </div>
+        
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item" v-for="(video) in videoArray.slice(1)"
@@ -279,128 +255,32 @@
 </template>
 
 <style>
-.socials-list i {
-    display: flex;
-    font-size: 12.3295px;
-    color: #26C165;
-    border: 0.5px solid #26C165;
-    padding: 4.55px;
-    border-radius: 5px;
-}
 
-.socials-list a {
-    text-decoration: none;
-}
-
-.socials-list {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    gap: 6px;
-    width: 8.5rem;
-}
-
-.footer-socials {
-    display: flex;
-    flex-direction: column;
-    margin-top: 17.69px;
-}
-
-.footer-list li a {
-    color: var(--white, #FFF);
-    font-family: Poppins;
-    font-size: 14.9px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 29.801px;
-    text-decoration: none;
-    cursor: pointer;
-    /* 200% */
-    opacity: 0.9;
-}
-
-.footer .footer-list img {
-    margin: 0;
-    width: 17.694px;
-    height: 17.694px;
-}
-
-.footer-list li:not(:first-child) {
-    color: var(--white, #FFF);
-    font-family: Poppins;
-    font-size: 14.9px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 29.801px;
-    list-style-type: none;
-    display: flex;
-    gap: 6.52px;
-    align-items: center;
-    /* 200% */
-}
-
-.footer-list li:first-child,
-.footer-socials h3 {
-    list-style-type: none;
-    color: var(--white, #FFF);
-    font-family: Poppins;
-    font-size: 14.9px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 20.861px;
-    margin-bottom: 17.69px;
-    /* 140% */
-}
-
-.footer-list {
-    margin: 0;
-    padding: 0;
-}
-
-#ndpr {
-    width: 151.41px;
-    height: 88.663px;
-}
-
-.footer-images {
-    display: flex;
-    flex-direction: column;
-    gap: 21.42px;
-    align-items: center;
-}
-
-.footer {
-    height: 386px;
-    background-color: #073042;
-    display: flex;
-    flex-direction: row;
-    gap: 4.9375rem;
-    justify-content: center;
-    padding-top: 2.75rem;
-}
 </style>
 
 <script>
 import { useCounterStore } from "@/store/index.js";
-
+import NavBar from "@/components/NavBar.vue"
 export default {
     data() {
         return {
-            loading: true,
-            videoArray: []
+            counterStore: useCounterStore(),
+            videoArray: [],
+            
         };
     },
+    components:{
+        NavBar,
+        
+    },
     async mounted() {
-        const counterStore = useCounterStore();
-        await counterStore.fetchData();
-        this.videoArray = counterStore.videoArray;
+        await this.counterStore.fetchData();
+        this.videoArray = this.counterStore.videoArray;
         setTimeout(this.showVideos, 10);
     },
     methods: {
         showVideos() {
-            this.loading = false;
+            this.counterStore.loading = false;
         }
     }
 };

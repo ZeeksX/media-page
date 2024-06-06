@@ -3,6 +3,7 @@ import { defineStore } from "pinia";
 export const useCounterStore = defineStore("counter", {
 	state: () => ({
 		videoArray: [],
+		loading: true
 	}),
 	getters: {},
 	actions: {
