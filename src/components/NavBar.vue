@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar">
+    <nav class="navbar" >
         <div class="list-content-one">
             <img id="logo" src="../assets/sycamorelogo.svg" alt="company-logo" tabindex="0" />
             <ul class="list-items">

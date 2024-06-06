@@ -20,6 +20,7 @@ body {
 	top: 5.125rem;
 	left: 17%;
 	z-index: 1;
+	height: 44px;
 }
 #logo {
 	width: 100%;
