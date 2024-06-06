@@ -5,18 +5,8 @@
             <h1>What we've been up to.</h1>
             <p>Check out our collection of videos and photos to have a glance at what's happening at Sycamore</p>
         </div>
-        
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item" v-for="(video) in videoArray.slice(1)"
-                    :key="video.snippet.resourceId.videoId">
-                    <iframe :src="`https://www.youtube.com/embed/${video.snippet.resourceId.videoId}`" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
-        </div>
+        <LargeVideoframe/>
+        <SmallVideoframe/>   
         <div class="frame">
             <h3>Lending in Nigeria: Can Tech Make Borrowing from Family and Friends Sustainable?</h3>
             <button><i class="bi bi-download"></i>Download report</button>
@@ -261,17 +251,19 @@
 <script>
 import { useCounterStore } from "@/store/index.js";
 import NavBar from "@/components/NavBar.vue"
+import LargeVideoframe from "@/components/LargeVideoframe.vue";
+import SmallVideoframe from "@/components/SmallVideoframe.vue";
 export default {
     data() {
         return {
             counterStore: useCounterStore(),
             videoArray: [],
-            
         };
     },
     components:{
         NavBar,
-        
+        LargeVideoframe,
+        SmallVideoframe
     },
     async mounted() {
         await this.counterStore.fetchData();
