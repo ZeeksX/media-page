@@ -443,7 +443,6 @@ iframe {
 	padding: 15px 0;
 	border: none;
 	gap: 12px;
-	
 }
 
 .blog-details {
@@ -593,6 +592,58 @@ iframe {
 	background: var(--Others-White, #fff);
 	filter: drop-shadow(0px 30px 40px rgba(212, 217, 232, 0.2));
 }
+.footer-list li:first-child,
+.footer-socials h3 {
+	list-style-type: none;
+	color: var(--white, #fff);
+	font-family: Poppins;
+	font-size: 14.9px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 20.861px;
+	margin-bottom: 17.69px;
+	/* 140% */
+}
+.footer {
+	height: 386px;
+	background-color: #073042;
+	display: flex;
+	flex-direction: column;
+}
+.footer-one {
+	display: flex;
+	flex-direction: row;
+	gap: 4.9375rem;
+	justify-content: center;
+	padding-top: 2.75rem;
+}
+.footer-images {
+	display: flex;
+	flex-direction: column;
+	gap: 21.42px;
+	align-items: center;
+}
+#ndpr {
+	width: 151.41px;
+	height: 88.663px;
+}
+.footer-list {
+	margin: 0;
+	padding: 0;
+}
+.footer-list li:not(:first-child) {
+	color: var(--white, #fff);
+	font-family: Poppins;
+	font-size: 14.9px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 29.801px;
+	list-style-type: none;
+	display: flex;
+	gap: 6.52px;
+	align-items: center;
+	/* 200% */
+}
 .socials-list i {
 	display: flex;
 	font-size: 12.3295px;
@@ -634,63 +685,23 @@ iframe {
 	/* 200% */
 	opacity: 0.9;
 }
-
 .footer .footer-list img {
 	margin: 0;
 	width: 17.694px;
 	height: 17.694px;
 }
-
-.footer-list li:not(:first-child) {
-	color: var(--white, #fff);
+.footer-two {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer-two h3 {
+	color: #fff;
 	font-family: Poppins;
-	font-size: 14.9px;
+	font-size: 11px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 29.801px;
-	list-style-type: none;
-	display: flex;
-	gap: 6.52px;
-	align-items: center;
-	/* 200% */
-}
-
-.footer-list li:first-child,
-.footer-socials h3 {
-	list-style-type: none;
-	color: var(--white, #fff);
-	font-family: Poppins;
-	font-size: 14.9px;
-	font-style: normal;
-	font-weight: 600;
-	line-height: 20.861px;
-	margin-bottom: 17.69px;
-	/* 140% */
-}
-
-.footer-list {
-	margin: 0;
-	padding: 0;
-}
-
-#ndpr {
-	width: 151.41px;
-	height: 88.663px;
-}
-
-.footer-images {
-	display: flex;
-	flex-direction: column;
-	gap: 21.42px;
-	align-items: center;
-}
-
-.footer {
-	height: 386px;
-	background-color: #073042;
-	display: flex;
-	flex-direction: row;
-	gap: 4.9375rem;
-	justify-content: center;
-	padding-top: 2.75rem;
+	line-height: 150%; /* 16.5px */
+	opacity: 0.7;
+	margin-top: 55.11px;
 }

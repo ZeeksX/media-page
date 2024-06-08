@@ -8,6 +8,11 @@
         </div>
     </div>
 </template>
+<style>
+.blog-details .card-body h5{
+    text-transform: capitalize;
+}
+</style>
 <script>
 import blogImage1 from "../assets/blog-image-1.png"
 import blogImage2 from "../assets/blog-image-2.png"
