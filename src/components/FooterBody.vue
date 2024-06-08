@@ -38,6 +38,9 @@
 </template>
 
 <script>
+import phoneIcon from "../assets/phone-icon.svg"
+import mailIcon from "../assets/mail-icon.svg"
+import addressIcon from "../assets/address-logo.svg"
 export default {
   data() {
     return {
@@ -61,9 +64,9 @@ export default {
         }
       ],
       contacts: [
-        { icon: "../assets/phone-icon.svg", text: "01 700 2021", link: "#" },
-        { icon: "../assets/mail-icon.svg", text: "info@sycamore.ng", link: "#" },
-        { icon: "../assets/address-logo.svg", text: "53b Oduduwa way, Ikeja, Lagos", link: "#" }
+        { icon: phoneIcon, text: "01 700 2021", link: "#" },
+        { icon: mailIcon, text: "info@sycamore.ng", link: "#" },
+        { icon: addressIcon, text: "53b Oduduwa way, Ikeja, Lagos", link: "#" }
       ],
       socials: [
         { icon: "bi bi-instagram", link: "#" },

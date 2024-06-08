@@ -146,7 +146,7 @@ iframe {
 		lightgray 50% / cover no-repeat;
 }
 #carouselExample {
-	width: 64rem;
+	width: 66rem;
 	margin: 0 auto 8.9375rem;
 	display: block;
 }
@@ -157,6 +157,9 @@ iframe {
 	width: 64rem;
 	overflow: scroll;
 	scrollbar-width: 0;
+}
+.carousel-inner::after{
+	display: none;
 }
 .carousel-inner::-webkit-scrollbar {
 	display: none;

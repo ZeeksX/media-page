@@ -40,7 +40,7 @@
 
         </div>
         <PromotionDetails />
-       
+        <FooterBody/>
     </div>
 </template>
 
@@ -54,6 +54,7 @@ import SmallVideoframe from "@/components/SmallVideoframe.vue";
 import PressCard from "@/components/PressCard.vue";
 import BlogCard from "@/components/BlogCard.vue";
 import PromotionDetails from "@/components/PromotionDetails.vue"
+import FooterBody from "@/components/FooterBody.vue"
 export default {
     data() {
         return {
@@ -67,7 +68,8 @@ export default {
         SmallVideoframe,
         PressCard,
         BlogCard,
-        PromotionDetails
+        PromotionDetails,
+        FooterBody
     },
     async mounted() {
         await this.counterStore.fetchData();
