@@ -14,19 +14,15 @@
         <div class="press">
             <h3>Press Clippings <i class="bi bi-newspaper"></i></h3>
             <div id="carouselExample2" class="carousel slide">
-                <div class="carousel-inner" id="carousel-inner">
-                    <PressCard />
+                <div id="carousel-body">
+                    <button id="left" :style="{ backgroundColor: counterStore.leftButtonColor }" @click="scrollLeft"><i
+                            class="bi bi-chevron-left"></i></button>
+                    <div class="carousel-inner" id="carousel-inner" ref="carouselBody">
+                        <PressCard />
+                    </div>
+                    <button id="right" :style="{ backgroundColor: counterStore.rightButtonColor }"
+                        @click="scrollRight"><i class="bi bi-chevron-right"></i></button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </div>
         <div class="blog">
@@ -40,7 +36,7 @@
 
         </div>
         <PromotionDetails />
-        <FooterBody/>
+        <FooterBody />
     </div>
 </template>
 
@@ -75,11 +71,25 @@ export default {
         await this.counterStore.fetchData();
         this.videoArray = this.counterStore.videoArray;
         setTimeout(this.showVideos, 10);
+        this.$nextTick(() => {
+            const carouselBody = this.$refs.carouselBody;
+            if (carouselBody) {
+                carouselBody.scrollLeft = this.counterStore.scrollPosition;
+            }
+        });
     },
     methods: {
         showVideos() {
             this.counterStore.loading = false;
-        }
-    }
+        },
+        scrollRight() {
+            const carouselBody = this.$refs.carouselBody;
+            this.counterStore.scrollRight(carouselBody);
+        },
+        scrollLeft() {
+            const carouselBody = this.$refs.carouselBody;
+            this.counterStore.scrollLeft(carouselBody);
+        },
+    },
 };
 </script>

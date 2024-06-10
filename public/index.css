@@ -158,7 +158,7 @@ iframe {
 	overflow: scroll;
 	scrollbar-width: 0;
 }
-.carousel-inner::after{
+.carousel-inner::after {
 	display: none;
 }
 .carousel-inner::-webkit-scrollbar {
@@ -240,7 +240,51 @@ iframe {
 #carouselExample2 .carousel-inner {
 	gap: 0.75rem;
 }
+#carousel-body {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+	scrollbar-width: none;
+}
 
+#carousel-body::-webkit-scrollbar {
+	display: none;
+}
+
+.carousel-inner {
+	display: flex;
+	transition: transform 0.3s ease;
+}
+
+#carouselExample button {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	border: none;
+}
+
+button i {
+	color: white;
+}
+
+#left {
+	margin-right: -15px;
+	z-index: 1;
+}
+
+#right {
+	margin-left: -15px;
+	z-index: 1;
+}
+#carouselExample2 button {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	border: none;
+}
 .card-body a {
 	width: 83.713px;
 	height: 33.485px;

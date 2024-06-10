@@ -3,7 +3,10 @@ import { defineStore } from "pinia";
 export const useCounterStore = defineStore("counter", {
 	state: () => ({
 		videoArray: [],
-		loading: true
+		loading: true,
+		scrollPosition: 0,
+		leftButtonColor: "lightgray",
+		rightButtonColor: "#26C165",
 	}),
 	getters: {},
 	actions: {
@@ -18,6 +21,38 @@ export const useCounterStore = defineStore("counter", {
 				console.warn(error);
 			}
 			console.log(this.videoArray);
+		},
+		scrollRight(carouselBody) {
+			if (!carouselBody) return; // Check if reference exists
+
+			const maxScroll = carouselBody.scrollWidth - carouselBody.clientWidth;
+
+			if (this.scrollPosition < maxScroll) {
+				this.scrollPosition += 150;
+				carouselBody.scrollLeft = this.scrollPosition;
+				this.leftButtonColor = "#26C165";
+			}
+
+			if (this.scrollPosition >= maxScroll) {
+				this.rightButtonColor = "lightgray";
+			} else {
+				this.rightButtonColor = "#26C165";
+			}
+		},
+		scrollLeft(carouselBody) {
+			if (!carouselBody) return; // Check if reference exists
+
+			if (this.scrollPosition > 0) {
+				this.scrollPosition -= 150;
+				carouselBody.scrollLeft = this.scrollPosition;
+				this.leftButtonColor = "#26C165";
+			}
+
+			if (this.scrollPosition <= 0) {
+				this.leftButtonColor = "lightgray";
+			} else {
+				this.rightButtonColor = "#26C165";
+			}
 		},
 	},
 });
