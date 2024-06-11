@@ -11,6 +11,7 @@
 <style>
 .blog-details .card-body h5{
     text-transform: capitalize;
+    margin-bottom: 0;
 }
 </style>
 <script>
