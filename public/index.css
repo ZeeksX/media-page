@@ -280,6 +280,12 @@ iframe {
 
 button i {
 	color: white;
+	display: block;
+	width: 24px;
+	height: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 #left {
@@ -750,7 +756,7 @@ button i {
 	margin-top: 55.11px;
 }
 /* Mobile Styles */
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
 	.navbar {
 		flex-direction: row;
 		left: 10%;
@@ -801,6 +807,9 @@ button i {
 		width: 85%;
 		margin-bottom: 5rem;
 	}
+	#carouselExample .carousel-item{
+		height: 220px;
+	}
 	#carouselExample button {
 		display: none;
 	}
@@ -808,7 +817,15 @@ button i {
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		gap: 2rem;
+		
+		gap: 2.5rem;
+	}
+	.carousel-item{
+		width: 45%;
+	}
+	.carousel-inner iframe{
+		width: 100%;
+		height: auto;
 	}
 	.frame {
 		padding: 5.625rem;
@@ -911,6 +928,136 @@ button i {
 		transform: scale(1);
 	}
 }
-@media (max-width: 1440px){
+@media (min-width: 1024px) and (max-width: 1440px){
+	.navbar{
+		width: 80%;
+		left: 10%;
+		top: 3rem;
+	}
+	.list-content-two{
+		gap: 1rem;
+	}
+	.list-items{
+		gap: 2.5rem;
+	}
+	.evolving {
+		margin-top: 9rem;
+	}
+	.evolving h1 {
+		width: 100%;
+		font-size: 2.5rem;
+		margin: 0 0 1.5rem;
+	}
+	.evolving p {
+		width: 80%;
+		font-size: 1.25rem;
+		margin-bottom: 5rem;
+	}
+	.video-frame{
+		width: 80%;
+		height: 30rem;
+	}
+	.video-item-one,
+	.video-item-one iframe,.video-clip {
+		width: 100%;
+		height: 30rem;
+	}
+	#carouselExample {
+		width: 85%;
+		margin-bottom: 5rem;
+	}
+	#carouselExample .carousel-item{
+		height: 200px;
+	}
+	.frame {
+		padding: 5.625rem;
+	}
+	.frame h3 {
+		font-size: 1rem;
+		width: 40%;
+		margin: 0;
+		height: auto;
+	}
+	.frame button {
+		padding: 10px 25px;
+		font-size: 12px;
+		width: 20%;
+		gap: 10px;
+	}
+	.press h3 {
+		width: 80%;
+	}
+	#carouselExample2 {
+		width: 85%;
+	}
+	#carouselExample2 .carousel-item {
+		width: 45%;
+	}
+	#carouselExample2 .carousel-inner {
+		gap: 2rem;
+	}
+	.card {
+		width: 100%;
+	}
+	.blog h3 {
+		padding: 3rem 0 1rem;
+		width: 80%;
+	}
+	.blog-details{
+		width: 80%;
+		align-items: flex-start;
+	}
+	.blog-details .card{
+		width: calc(100%/3)
+	}
+	.blog-details img{
+		width: 100%;
+	}
+	.blog-details .card-body {
+		width: 100%;
+		
+	}
+	.blog-details .card-body p {
+		width: 100%;
+		height: auto;
+		font-size: 10.5px;
+	}
+	.promotion{
+		gap: 3rem;
+		padding: 0 15%;
+	}
+	.promotion h3{
+		padding-top: 15rem;
+        line-height: 60px;
+        font-size: 3rem;
+        height: auto;
+	}
+	.promotion .image{
+		width: 50%;
+		margin-top: 7rem;
+	}
+	.promotion-details{
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+		width: 45%;
+	}
+	.promotion-details a img{
+		width: 25px;
+		height: 25px;
+	}
+	.promotion-details h5{
+		font-size: 12px;
+	}
+	.promotion-link{
+		gap: 10px;
+		margin-top: 0;
+	}
+	.promotion-link a{
+		width: 120px;
+		height: 50px;
+		border-radius: 14px;
+		gap: 5px;
+	}
 	
 }
