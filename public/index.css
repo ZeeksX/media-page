@@ -756,7 +756,7 @@ button i {
 	margin-top: 55.11px;
 }
 /* Mobile Styles */
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
 	.navbar {
 		flex-direction: row;
 		left: 10%;
