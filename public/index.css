@@ -756,7 +756,111 @@ button i {
 	margin-top: 55.11px;
 }
 /* Mobile Styles */
-@media (max-width: 1024px) {
+@media (min-width: 280px) and (max-width: 767px) {
+	.navbar {
+		width: 70%;
+		justify-content: space-between;
+	}
+	.list-items,
+	.list-content-two {
+		display: none;
+	}
+	.bars-icon {
+		display: flex;
+		display: flex;
+		width: 50px;
+		height: 44px;
+		align-items: center;
+		position: absolute;
+		right: 0;
+	}
+	.video-frame,
+	.video-clip,
+	.video-item-one,
+	.video-item-one iframe {
+		height: 20rem !important;
+		border-radius: 10px !important;
+	}
+	.bars-icon span {
+		font-size: 30px;
+	}
+	#carouselExample .carousel-item {
+		width: 80% !important;
+		max-width: 380px;
+	}
+	#carouselExample .carousel-inner {
+		flex-wrap: nowrap !important;
+		flex-direction: column !important;
+	}
+	#carouselExample2 .carousel-item {
+		width: 80% !important;
+		max-width: 350px;
+	}
+	#carouselExample2 .card {
+		max-width: 350px !important;
+	}
+	.frame {
+		padding: 2rem !important;
+		gap: 0.5rem !important;
+	}
+	.frame h3 {
+		font-size: 11px !important;
+	}
+	.frame button {
+		padding: 5px 7px !important;
+		font-size: 10px !important;
+		width: 200px !important;
+		gap: 5px !important;
+	}
+	.blog h3 {
+		text-align: center;
+	}
+	.blog-details .card {
+		width: 100% !important;
+		max-width: 400px !important;
+	}
+	.blog-link {
+		margin-bottom: 4rem;
+	}
+	.promotion {
+		flex-direction: column;
+	}
+	.promotion .image {
+		width: 80% !important;
+		margin: 0 auto !important;
+	}
+	.promotion h3 {
+		padding-top: 2rem !important;
+		text-align: center;
+		width: 100% !important;
+	}
+	.promotion-details {
+		width: 80% !important;
+		margin: 0 auto;
+	}
+	.promotion-link {
+		width: 80% !important;
+		margin: 0 auto;
+		justify-content: center;
+	}
+	.footer {
+		height: auto;
+	}
+	.footer-images {
+		align-items: flex-start;
+	}
+	.footer-one {
+		flex-direction: column;
+		gap: 2rem;
+		justify-content: flex-start;
+		align-items: flex-start;
+		padding: 0;
+	}
+	.footer-two h3 {
+		margin-top: 0;
+	}
+}
+@media (min-width: 425px) and (max-width: 1024px) {
 	.navbar {
 		flex-direction: row;
 		left: 10%;
@@ -794,12 +898,13 @@ button i {
 		font-size: 1rem;
 		margin-bottom: 5rem;
 	}
-	.video-frame{
+	.video-frame {
 		height: 25rem;
 		width: 80%;
 	}
 	.video-item-one,
-	.video-item-one iframe,.video-clip {
+	.video-item-one iframe,
+	.video-clip {
 		width: 100%;
 		height: 25rem;
 	}
@@ -807,7 +912,7 @@ button i {
 		width: 85%;
 		margin-bottom: 5rem;
 	}
-	#carouselExample .carousel-item{
+	#carouselExample .carousel-item {
 		height: 220px;
 	}
 	#carouselExample button {
@@ -817,13 +922,13 @@ button i {
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		
+
 		gap: 2.5rem;
 	}
-	.carousel-item{
+	.carousel-item {
 		width: 45%;
 	}
-	.carousel-inner iframe{
+	.carousel-inner iframe {
 		width: 100%;
 		height: auto;
 	}
@@ -865,16 +970,16 @@ button i {
 		padding: 3rem 0 1rem;
 		width: 80%;
 	}
-	.blog-details{
+	.blog-details {
 		width: 80%;
 		flex-wrap: wrap;
 		gap: 2rem;
 		justify-content: center;
 	}
-	.blog-details .card{
+	.blog-details .card {
 		width: 45%;
 	}
-	.blog-details img{
+	.blog-details img {
 		width: 100%;
 	}
 	.blog-details .card-body {
@@ -884,60 +989,60 @@ button i {
 		width: 100%;
 		font-size: 12px;
 	}
-	.promotion{
+	.promotion {
 		gap: 3rem;
 		padding: 0 10%;
 	}
-	.promotion h3{
+	.promotion h3 {
 		padding-top: 10rem;
-        line-height: 60px;
-        font-size: 3rem;
-        height: auto;
+		line-height: 60px;
+		font-size: 3rem;
+		height: auto;
 	}
-	.promotion .image{
+	.promotion .image {
 		width: 50%;
 		margin-top: 7rem;
 	}
-	.promotion-details{
+	.promotion-details {
 		display: flex;
 		flex-direction: column;
 		gap: 1.5rem;
 		width: 45%;
 	}
-	.promotion-details a img{
+	.promotion-details a img {
 		width: 25px;
 		height: 25px;
 	}
-	.promotion-details h5{
+	.promotion-details h5 {
 		font-size: 12px;
 	}
-	.promotion-link{
+	.promotion-link {
 		gap: 10px;
 		margin-top: 0;
 	}
-	.promotion-link a{
+	.promotion-link a {
 		width: 120px;
 		height: 50px;
 		border-radius: 14px;
 		gap: 5px;
 	}
-	.footer-one{
+	.footer-one {
 		transform: scale(0.9);
 	}
-	.footer-two{
+	.footer-two {
 		transform: scale(1);
 	}
 }
-@media (min-width: 1024px) and (max-width: 1440px){
-	.navbar{
+@media (min-width: 1024px) and (max-width: 1440px) {
+	.navbar {
 		width: 80%;
 		left: 10%;
 		top: 3rem;
 	}
-	.list-content-two{
+	.list-content-two {
 		gap: 1rem;
 	}
-	.list-items{
+	.list-items {
 		gap: 2.5rem;
 	}
 	.evolving {
@@ -953,12 +1058,13 @@ button i {
 		font-size: 1.25rem;
 		margin-bottom: 5rem;
 	}
-	.video-frame{
+	.video-frame {
 		width: 80%;
 		height: 30rem;
 	}
 	.video-item-one,
-	.video-item-one iframe,.video-clip {
+	.video-item-one iframe,
+	.video-clip {
 		width: 100%;
 		height: 30rem;
 	}
@@ -966,7 +1072,7 @@ button i {
 		width: 85%;
 		margin-bottom: 5rem;
 	}
-	#carouselExample .carousel-item{
+	#carouselExample .carousel-item {
 		height: 200px;
 	}
 	.frame {
@@ -1003,61 +1109,59 @@ button i {
 		padding: 3rem 0 1rem;
 		width: 80%;
 	}
-	.blog-details{
+	.blog-details {
 		width: 80%;
 		align-items: flex-start;
 	}
-	.blog-details .card{
-		width: calc(100%/3)
+	.blog-details .card {
+		width: calc(100% / 3);
 	}
-	.blog-details img{
+	.blog-details img {
 		width: 100%;
 	}
 	.blog-details .card-body {
 		width: 100%;
-		
 	}
 	.blog-details .card-body p {
 		width: 100%;
 		height: auto;
 		font-size: 10.5px;
 	}
-	.promotion{
+	.promotion {
 		gap: 3rem;
 		padding: 0 15%;
 	}
-	.promotion h3{
+	.promotion h3 {
 		padding-top: 15rem;
-        line-height: 60px;
-        font-size: 3rem;
-        height: auto;
+		line-height: 60px;
+		font-size: 3rem;
+		height: auto;
 	}
-	.promotion .image{
+	.promotion .image {
 		width: 50%;
 		margin-top: 7rem;
 	}
-	.promotion-details{
+	.promotion-details {
 		display: flex;
 		flex-direction: column;
 		gap: 1.5rem;
 		width: 45%;
 	}
-	.promotion-details a img{
+	.promotion-details a img {
 		width: 25px;
 		height: 25px;
 	}
-	.promotion-details h5{
+	.promotion-details h5 {
 		font-size: 12px;
 	}
-	.promotion-link{
+	.promotion-link {
 		gap: 10px;
 		margin-top: 0;
 	}
-	.promotion-link a{
+	.promotion-link a {
 		width: 120px;
 		height: 50px;
 		border-radius: 14px;
 		gap: 5px;
 	}
-	
 }

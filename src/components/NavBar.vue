@@ -10,8 +10,16 @@
             <button class="btn btn-primary me-md-2" type="button" id="signin">Sign in</button>
             <button class="btn btn-primary" type="button" id="signup">Sign up</button>
         </div>
+        <div class="bars-icon">
+            <span><i class="fa-solid fa-bars"></i></span>
+        </div>
     </nav>
 </template>
+<style>
+.bars-icon{
+    display: none;
+}
+</style>
 <script>
 export default{
     data() {
