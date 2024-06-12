@@ -755,11 +755,16 @@ button i {
 	opacity: 0.7;
 	margin-top: 55.11px;
 }
-/* Mobile Styles */
+
 @media (min-width: 280px) and (max-width: 767px) {
 	.navbar {
-		width: 70%;
-		justify-content: space-between;
+		width: 90vw;
+		flex-direction: row;
+		left: 2.5%;
+		gap: 2rem;
+		margin-bottom: 4rem;
+		top: 2rem;
+		height: auto;
 	}
 	.list-items,
 	.list-content-two {
@@ -767,22 +772,66 @@ button i {
 	}
 	.bars-icon {
 		display: flex;
-		display: flex;
 		width: 50px;
 		height: 44px;
 		align-items: center;
+		justify-content: flex-end;
 		position: absolute;
 		right: 0;
 	}
-	.video-frame,
+	.bars-icon span {
+		font-size: 30px;
+	}
+	.evolving {
+		margin-top: 8rem;
+	}
+	.evolving h1 {
+		width: 100%;
+		font-size: 28px;
+	}
+	.evolving p {
+		width: 90%;
+		font-size: 12px;
+		margin-bottom: 4rem;
+		text-align: center;
+	}
+	.video-item-one,
+	.video-item-one iframe,
+	.video-clip {
+		width: 100%;
+		height: 25rem;
+	}
+	.video-frame {
+		width: 80%;
+		height: 25rem !important;
+		border-radius: 10px !important;
+	}
 	.video-clip,
 	.video-item-one,
 	.video-item-one iframe {
-		height: 20rem !important;
+		height: 25rem !important;
 		border-radius: 10px !important;
+		width: 100%;
 	}
-	.bars-icon span {
-		font-size: 30px;
+	#carouselExample {
+		width: 85%;
+		margin-bottom: 5rem;
+	}
+	#carouselExample button {
+		display: none;
+	}
+	.carousel-inner {
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 2.5rem;
+	}
+	.carousel-item {
+		width: 50%;
+	}
+	.carousel-inner iframe {
+		width: 100%;
+		height: auto;
 	}
 	#carouselExample .carousel-item {
 		width: 80% !important;
@@ -792,6 +841,37 @@ button i {
 		flex-wrap: nowrap !important;
 		flex-direction: column !important;
 	}
+	.frame {
+		padding: 2rem !important;
+		gap: 0.5rem !important;
+	}
+	.frame h3 {
+		font-size: 10px !important;
+		width: 90%;
+		margin: 0;
+		height: auto;
+	}
+	.frame button {
+		padding: 5px 1px !important;
+		font-size: 10px !important;
+		width: 80% !important;
+		max-width: 200px !important;
+		gap: 3px !important;
+	}
+	.press h3 {
+		width: 80%;
+		font-size: 24px;
+		padding: 2rem 0 1rem;
+	}
+	#carouselExample2 {
+		width: 85%;
+	}
+	#carouselExample2 button {
+		display: none;
+	}
+	#carouselExample2 .carousel-inner {
+		gap: 2rem;
+	}
 	#carouselExample2 .carousel-item {
 		width: 80% !important;
 		max-width: 350px;
@@ -799,31 +879,45 @@ button i {
 	#carouselExample2 .card {
 		max-width: 350px !important;
 	}
-	.frame {
-		padding: 2rem !important;
-		gap: 0.5rem !important;
+	.card {
+		width: 100%;
 	}
-	.frame h3 {
-		font-size: 11px !important;
-	}
-	.frame button {
-		padding: 5px 7px !important;
-		font-size: 10px !important;
-		width: 200px !important;
-		gap: 5px !important;
+	.card-body p {
+		width: 100%;
 	}
 	.blog h3 {
+		padding: 3rem 0 1rem;
+		width: 80%;
 		text-align: center;
+		font-size: 24px;
+	}
+	.blog-details {
+		width: 80%;
+		flex-wrap: wrap;
+		gap: 2rem;
+		justify-content: center;
 	}
 	.blog-details .card {
 		width: 100% !important;
 		max-width: 400px !important;
+	}
+	.blog-details img {
+		width: 100%;
+	}
+	.blog-details .card-body {
+		width: 100%;
+	}
+	.blog-details .card-body p {
+		width: 100%;
+		font-size: 12px;
 	}
 	.blog-link {
 		margin-bottom: 4rem;
 	}
 	.promotion {
 		flex-direction: column;
+		width: 100%;
+		gap: 2.5rem;
 	}
 	.promotion .image {
 		width: 80% !important;
@@ -833,6 +927,8 @@ button i {
 		padding-top: 2rem !important;
 		text-align: center;
 		width: 100% !important;
+		font-size: 45px;
+		line-height: 1;
 	}
 	.promotion-details {
 		width: 80% !important;
@@ -842,6 +938,7 @@ button i {
 		width: 80% !important;
 		margin: 0 auto;
 		justify-content: center;
+		transform: scale(0.7);
 	}
 	.footer {
 		height: auto;
@@ -854,10 +951,12 @@ button i {
 		gap: 2rem;
 		justify-content: flex-start;
 		align-items: flex-start;
-		padding: 0;
+		padding: 10% 5%;
 	}
 	.footer-two h3 {
 		margin-top: 0;
+		text-align: center;
+		width: 95%;
 	}
 }
 @media (min-width: 425px) and (max-width: 1024px) {
@@ -1017,8 +1116,9 @@ button i {
 		font-size: 12px;
 	}
 	.promotion-link {
-		gap: 10px;
+		gap: 1rem;
 		margin-top: 0;
+		transform: scale(1.25);
 	}
 	.promotion-link a {
 		width: 120px;
