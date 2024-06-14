@@ -16,7 +16,7 @@ export default {
             options: {
                 background: {
                     color: {
-                        value: '#0d47a1'
+                        value: ''
                     }
                 },
                 fullScreen: false,
@@ -24,11 +24,11 @@ export default {
                 interactivity: {
                     events: {
                         onClick: {
-                            enable: true,
+                            enable: false,
                             mode: 'push'
                         },
                         onHover: {
-                            enable: true,
+                            enable: false,
                             mode: 'repulse'
                         },
                     },
@@ -36,7 +36,7 @@ export default {
                         bubble: {
                             distance: 400,
                             duration: 2,
-                            opacity: 0.8,
+                            opacity: 0.1,
                             size: 40
                         },
                         push: {
@@ -50,37 +50,37 @@ export default {
                 },
                 particles: {
                     color: {
-                        value: '#ffffff'
+                        value: '#000000'
                     },
                     links: {
-                        color: '#ffffff',
+                        color: '#000000',
                         distance: 150,
                         enable: true,
-                        opacity: 0.5,
-                        width: 1
+                        opacity: 0.1,
+                        width: 0.8
                     },
                     move: {
                         direction: 'none',
                         enable: true,
                         outModes: 'bounce',
-                        random: false,
-                        speed: 6,
+                        random: true,
+                        speed: 5,
                         straight: false
                     },
                     number: {
                         density: {
                             enable: true,
                         },
-                        value: 80
+                        value: 200
                     },
                     opacity: {
-                        value: 0.5
+                        value: 0.1
                     },
                     shape: {
                         type: 'circle'
                     },
                     size: {
-                        value: { min: 1, max: 5 }
+                        value: { min: 1, max: 3 }
                     }
                 },
                 detectRetina: true
@@ -98,7 +98,7 @@ export default {
 <style scoped>
 #particles {
     width: 100%;
-    height: 600px;
+    height: 800px;
     position: absolute;
     top: 0;
     z-index: -1;
