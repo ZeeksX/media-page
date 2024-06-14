@@ -26,7 +26,9 @@
     .list-content-two {
         display: none;
     }
-
+    .list-content-one{
+        gap: 3rem !important;
+    }
     .list-items.hover-enabled {
         gap: 1rem;
     }
@@ -90,7 +92,7 @@ export default {
             const bar = document.querySelector(".bars-icon");
             const navRow = document.querySelector(".list-content-one");
             const navLogo = document.querySelector(".list-content-one img");
-            bar.style.top = this.clicked ? "3rem" : "";
+            bar.style.top = this.clicked ? "2rem" : "";
             bar.style.justifyContent = this.clicked ? "flex-start" : "";
             navRow.style.flexDirection = this.clicked ? "column" : "";
             navRow.style.width = this.clicked ? "100%" : "";
