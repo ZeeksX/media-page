@@ -11,20 +11,7 @@
             <h3>Lending in Nigeria: Can Tech Make Borrowing from Family and Friends Sustainable?</h3>
             <button><i class="bi bi-download"></i>Download report</button>
         </div>
-        <div class="press">
-            <h3>Press Clippings <i class="bi bi-newspaper"></i></h3>
-            <div id="carouselExample2" class="carousel slide">
-                <div id="carousel-body">
-                    <button id="left" :style="{ backgroundColor: counterStore.leftButtonColor }" @click="scrollLeft"><i
-                            class="bi bi-chevron-left"></i></button>
-                    <div class="carousel-inner" id="carousel-inner" ref="carouselBody">
-                        <PressCard />
-                    </div>
-                    <button id="right" :style="{ backgroundColor: counterStore.rightButtonColor }"
-                        @click="scrollRight"><i class="bi bi-chevron-right"></i></button>
-                </div>
-            </div>
-        </div>
+        <PressCard />
         <div class="blog">
             <h3>Latest from our Blog</h3>
             <div class="blog-details">
@@ -71,25 +58,12 @@ export default {
         await this.counterStore.fetchData();
         this.videoArray = this.counterStore.videoArray;
         setTimeout(this.showVideos, 10);
-        this.$nextTick(() => {
-            const carouselBody = this.$refs.carouselBody;
-            if (carouselBody) {
-                carouselBody.scrollLeft = this.counterStore.scrollPosition;
-            }
-        });
     },
     methods: {
         showVideos() {
             this.counterStore.loading = false;
         },
-        scrollRight() {
-            const carouselBody = this.$refs.carouselBody;
-            this.counterStore.scrollRight(carouselBody);
-        },
-        scrollLeft() {
-            const carouselBody = this.$refs.carouselBody;
-            this.counterStore.scrollLeft(carouselBody);
-        },
+       
     },
 };
 </script>

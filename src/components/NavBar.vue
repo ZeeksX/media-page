@@ -32,7 +32,6 @@
     .list-items.hover-enabled {
         gap: 1rem;
     }
-
     .list-items.list-items.hover-enabled li {
         padding: 2rem;
         width: 100vw;
@@ -41,13 +40,11 @@
         align-items: center;
         text-align: center;
     }
-
     .list-items.hover-enabled li:hover {
         background-color: red;
         color: #333;
         cursor: pointer;
     }
-
     .list-items.hover-enabled li a:hover {
         text-decoration: underline;
     }

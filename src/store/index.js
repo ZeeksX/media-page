@@ -20,10 +20,9 @@ export const useCounterStore = defineStore("counter", {
 			} catch (error) {
 				console.warn(error);
 			}
-			console.log(this.videoArray);
 		},
 		scrollRight(carouselBody) {
-			if (!carouselBody) return; // Check if reference exists
+			if (!carouselBody) return;
 
 			const maxScroll = carouselBody.scrollWidth - carouselBody.clientWidth;
 
@@ -40,7 +39,7 @@ export const useCounterStore = defineStore("counter", {
 			}
 		},
 		scrollLeft(carouselBody) {
-			if (!carouselBody) return; // Check if reference exists
+			if (!carouselBody) return; 
 
 			if (this.scrollPosition > 0) {
 				this.scrollPosition -= 150;
